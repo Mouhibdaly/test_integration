@@ -1,234 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST-INTEGRATION</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="main_container">
-        <nav class="nav_bar_container">
-            <div class="top_right_menu">
-                <li>AIDE</li>
-                <li>NOUS JOINDRE</li>
-                <li>ENG</li>
-            </div>
-            <div class="main_nav">
-                <li>ANNONCER</li>
-                <li>PLANIFIER UN VOYAGE</li>
-                <li>MES VOYAGES</li>
-                <li>CONNEXION</li>
-            </div>
-        </nav>
+      <nav class="nav_bar_container">
+        <div class="top_right_menu">
+          <li>AIDE</li>
+          <li>NOUS JOINDRE</li>
+          <li>ENG</li>
+        </div>
+        <div class="main_nav">
+          <li>ANNONCER</li>
+          <li>PLANIFIER UN VOYAGE</li>
+          <li>MES VOYAGES</li>
+          <li>CONNEXION</li>
+        </div>
+      </nav>
     </div>
     <section class="landing">
-        <div class="search_section">
-
+      <div class="search_section">
+        <div class="search_section_wrapper">
+          <input type="text" placeholder="Essayer Montréal" />
+          <div>
+            <p>Style</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </div>
+          <div>
+            <p>Langue</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </div>
+          <div>
+            <p>Arrivée</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+              />
+            </svg>
+            <p>Départ</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-calendar-date"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23"
+              />
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+              />
+            </svg>
+          </div>
+          <button>RECHERCHER</button>
         </div>
-        <div class="banner">
-            <h1>découvrir le monde par les voyages!</h1>
-            <button>INSCRIVEZ-VOUS</button>
-        </div>
-        <div class="bottom_bar">
-            <li>expériences de voyage incroyables</li>
-            <li>a propos</li>
-        </div>
+        <button class="PLUS_FILTRES">PLUS DE FILTRES +</button>
+      </div>
+      <div class="banner">
+        <h1>découvrir le monde par les voyages!</h1>
+        <button>INSCRIVEZ-VOUS!</button>
+      </div>
+      <div class="bottom_bar">
+        <li>expériences de voyage incroyables</li>
+        <li>a propos</li>
+      </div>
     </section>
     <section class="cards_section">
-        <div class="cards_navigation">
-            <div class="cards_navigation_container">
-                <div class="card_links">
-                    <li>experiences</li>
-                    <li>témoignages</li>
-                </div>
-                <button>annoncer</button>
-            </div>
+      <div class="cards_navigation">
+        <div class="cards_navigation_container">
+          <div class="card_links">
+            <li>experiences</li>
+            <li>témoignages</li>
+          </div>
+          <button class="button_annoncer">annoncer</button>
         </div>
-        <div class="cards_wrapper">
-            <div class="card">
-                <div class="card_header">
-                    <img src="./cuisinier.jpg" alt="">
-                    <div class="user_image">
-                        <img src="./cuisinier.jpg" alt="">
-                    </div>
-                    <p class="price">$35</p>
-                </div>
-                <div class="card_bottom">
-                    <p class="card_title">Découvertes culinaires</p>
-                    <p class="voyager_name">avec julie</p>
-                    <p class="card_description">Venez apprendre a cuisiner tout en découvrant un appartement montréalais!</p>
-                </div>
+      </div>
+      <div class="cards_wrapper">
+        <div class="card">
+          <div class="card_header">
+            <img src="./images/cuisiner.png" alt="" />
+            <div class="user_image">
+              <img src="./images/girl1.png" alt="" />
             </div>
-            <div class="card">
-                <div class="card_header">
-                    <img src="./cuisinier.jpg" alt="">
-                    <div class="user_image">
-                        <img src="./cuisinier.jpg" alt="">
-                    </div>
-                    <p class="price">$35</p>
-                </div>
-                <div class="card_bottom">
-                    <p class="card_title">Découvertes culinaires</p>
-                    <p class="voyager_name">avec julie</p>
-                    <p class="card_description">Venez apprendre a cuisiner tout en découvrant un appartement montréalais!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_header">
-                    <img src="./cuisinier.jpg" alt="">
-                    <div class="user_image">
-                        <img src="./cuisinier.jpg" alt="">
-                    </div>
-                    <p class="price">$35</p>
-                </div>
-                <div class="card_bottom">
-                    <p class="card_title">Découvertes culinaires</p>
-                    <p class="voyager_name">avec julie</p>
-                    <p class="card_description">Venez apprendre a cuisiner tout en découvrant un appartement montréalais!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_header">
-                    <img src="./cuisinier.jpg" alt="">
-                    <div class="user_image">
-                        <img src="./cuisinier.jpg" alt="">
-                    </div>
-                    <p class="price">$35</p>
-                </div>
-                <div class="card_bottom">
-                    <p class="card_title">Découvertes culinaires</p>
-                    <p class="voyager_name">avec julie</p>
-                    <p class="card_description">Venez apprendre a cuisiner tout en découvrant un appartement montréalais!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_header">
-                    <img src="./cuisinier.jpg" alt="">
-                    <div class="user_image">
-                        <img src="./cuisinier.jpg" alt="">
-                    </div>
-                    <p class="price">$35</p>
-                </div>
-                <div class="card_bottom">
-                    <p class="card_title">Découvertes culinaires</p>
-                    <p class="voyager_name">avec julie</p>
-                    <p class="card_description">Venez apprendre a cuisiner tout en découvrant un appartement montréalais!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_header">
-                    <img src="./cuisinier.jpg" alt="">
-                    <div class="user_image">
-                        <img src="./cuisinier.jpg" alt="">
-                    </div>
-                    <p class="price">$35</p>
-                </div>
-                <div class="card_bottom">
-                    <p class="card_title">Découvertes culinaires</p>
-                    <p class="voyager_name">avec julie</p>
-                    <p class="card_description">Venez apprendre a cuisiner tout en découvrant un appartement montréalais!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_header">
-                    <img src="./cuisinier.jpg" alt="">
-                    <div class="user_image">
-                        <img src="./cuisinier.jpg" alt="">
-                    </div>
-                    <p class="price">$35</p>
-                </div>
-                <div class="card_bottom">
-                    <p class="card_title">Découvertes culinaires</p>
-                    <p class="voyager_name">avec julie</p>
-                    <p class="card_description">Venez apprendre a cuisiner tout en découvrant un appartement montréalais!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_header">
-                    <img src="./cuisinier.jpg" alt="">
-                    <div class="user_image">
-                        <img src="./cuisinier.jpg" alt="">
-                    </div>
-                    <p class="price">$35</p>
-                </div>
-                <div class="card_bottom">
-                    <p class="card_title">Découvertes culinaires</p>
-                    <p class="voyager_name">avec julie</p>
-                    <p class="card_description">Venez apprendre a cuisiner tout en découvrant un appartement montréalais!</p>
-                </div>
-            </div>
+            <p class="price">35$</p>
+          </div>
+          <div class="card_bottom">
+            <p class="card_title">Découvertes culinaires</p>
+            <p class="voyager_name">avec julie</p>
+            <p class="card_description">
+              Venez apprendre a cuisiner tout en découvrant un appartement
+              montréalais!
+            </p>
+          </div>
         </div>
+        <div class="card">
+          <div class="card_header">
+            <img src="./images/bicycles.png" alt="" />
+            <div class="user_image">
+              <img src="./images/man1.png" alt="" />
+            </div>
+            <p class="price">$5</p>
+          </div>
+          <div class="card_bottom">
+            <p class="card_title">Hébergement + vélo</p>
+            <p class="voyager_name">avec Ali</p>
+            <p class="card_description">
+              Le meilleur moyen de visitez une ville est a vélo.Laissez moi vous
+              faire decouvrir mes coins favoris!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_header">
+            <img src="./images/Fishing.png" alt="" />
+            <div class="user_image">
+              <img src="./images/man2.png" alt="" />
+            </div>
+            <p class="price">141$/nuit</p>
+          </div>
+          <div class="card_bottom">
+            <p class="card_title">Découvertes culinaires</p>
+            <p class="voyager_name">avec Alex</p>
+            <p class="card_description">
+              Venez apprendre a cuisiner tout en découvrant un appartement
+              montréalais!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_header">
+            <img src="./images/Sportifs.png" alt="" />
+            <div class="user_image">
+              <img src="./images/girl2.png" alt="" />
+            </div>
+            <p class="price">0$</p>
+          </div>
+          <div class="card_bottom">
+            <p class="card_title">Découvertes culinaires</p>
+            <p class="voyager_name">Avec Florence</p>
+            <p class="card_description">
+              Venez apprendre a cuisiner tout en découvrant un appartement
+              montréalais!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_header">
+            <img src="./images/vin.png" alt="" />
+            <div class="user_image">
+              <img src="./images/girl3.png" alt="" />
+            </div>
+            <p class="price">25$</p>
+          </div>
+          <div class="card_bottom">
+            <p class="card_title">Découvertes culinaires</p>
+            <p class="voyager_name">avec Marie</p>
+            <p class="card_description">
+              Venez apprendre a cuisiner tout en découvrant un appartement
+              montréalais!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_header">
+            <img src="./images/yoga.png" alt="" />
+            <div class="user_image">
+              <img src="./images/man3.png" alt="" />
+            </div>
+            <p class="price">7$</p>
+          </div>
+          <div class="card_bottom">
+            <p class="card_title">Découvertes culinaires</p>
+            <p class="voyager_name">Avec Adrien</p>
+            <p class="card_description">
+              Venez apprendre a cuisiner tout en découvrant un appartement
+              montréalais!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_header">
+            <img src="./images/yaght.png" alt="" />
+            <div class="user_image">
+              <img src="./images/man4.png" alt="" />
+            </div>
+            <p class="price">30$</p>
+          </div>
+          <div class="card_bottom">
+            <p class="card_title">Découvertes culinaires</p>
+            <p class="voyager_name">Avec Alain</p>
+            <p class="card_description">
+              Venez apprendre a cuisiner tout en découvrant un appartement
+              montréalais!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_header">
+            <img src="./images/Mountain.png" alt="" />
+            <div class="user_image">
+              <img src="./images/girl4.png" alt="" />
+            </div>
+            <p class="price">100$</p>
+          </div>
+          <div class="card_bottom">
+            <p class="card_title">Découvertes culinaires</p>
+            <p class="voyager_name">Avec Amélie</p>
+            <p class="card_description">
+              Venez apprendre a cuisiner tout en découvrant un appartement
+              montréalais!
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="hebergement">
-
+      <button class="tout_hebergement">tout les hébergements</button>
+      <h1 class="text_bottom_hebergement">UN VOYAGE DE REVE</h1>
+      <div class="grid_container">
+        <div class="top_grid">
+          <div class="sub_grid1">
+            <div class="sub_grid_split">
+              <div>
+                <img
+                  src="./images/group.png"
+                  alt="Image 2"
+                  class="group_picture"
+                />
+              </div>
+              <div>
+                <img
+                  src="./images/holding.png"
+                  alt="Image 2"
+                  class="holding_picture"
+                />
+              </div>
+            </div>
+            <div class="sub_grid_banner">
+              <img
+                src="./images/credit.png"
+                alt="Image 2"
+                class="credit_picture"
+              />
+            </div>
+          </div>
+          <div class="publish">
+            <img
+              src="./images/Colleagues.png"
+              alt="Image 2"
+              class="Colleagues_picture"
+            />
+          </div>
+        </div>
+        <div class="bottom_grid">
+          <div>
+            <img src="./images/team2.png" alt="Image 2" class="team2-picture" />
+          </div>
+          <div>
+            <img src="./images/team.png" alt="Image 2" class="team-picture" />
+          </div>
+        </div>
+      </div>
     </section>
     <section class="container_description">
-        <div class="desc">
-            <div class="description_img">
-                <img src="./cuisinier.jpg" alt="">
-            </div>
-            <div class="description_field"></div>
+      <div class="desc">
+        <div class="description_img">
+          <img src="./images/holiday.png" alt="" />
         </div>
-        <div class="desc">
-            <div class="description_field"></div>
-            <div class="description_img">
-                <img src="./cuisinier.jpg" alt="">
+        <div class="description_field">
+          <div class="revenu">
+            <div class="description_field_title">
+              <img class="img-ic" src="./images/dollar.png" alt="" />
+              <h1 class="gagnez_text">GAGNEZ UN REVENU ADDITIONNEL</h1>
             </div>
+            <p>
+              Trouvez des offres exceptionnelles sur notre site pour vos
+              vacances : hébergements, vols et activités. Peu importe votre
+              budget, créez des souvenirs inoubliables sans stress financier.
+            </p>
+          </div>
+          <div class="voyage">
+            <div class="description_field_title">
+              <img class="img-ic" src="./images/review.png" alt="" />
+              <h1 class="Trouvez_TEXT">FAITES DU VOYAGE UNE EXPERIENCE</h1>
+            </div>
+            <p>
+              Découvrez une communauté passionnée de voyageurs sur notre
+              plateforme. Échangez des conseils, des histoires et des astuces
+              pour des aventures inoubliables. Connectez-vous avec d'autres
+              voyageurs.
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="desc">
+        <div class="description_field">
+          <div class="ville">
+            <div class="description_field_title">
+              <img class="img-ic" src="./images/skyscraper.png" alt="" />
+              <h1 class="Partagez_text">PARTAGEZ VOTRE VILLE</h1>
+            </div>
+            <p>
+              Trouvez des offres exceptionnelles sur notre site pour vos
+              vacances : hébergements, vols et activités. Peu importe votre
+              budget, créez des souvenirs inoubliables sans stress financier.
+            </p>
+          </div>
+          <div class="home">
+            <div class="description_field_title">
+              <img class="img-ic" src="./images/home.png" alt="" />
+              <h1 class="humanisez_text">HUMANISEZ VOTRE VILLE</h1>
+            </div>
+            <p>
+              Partagez la beauté de votre ville avec des voyageurs du monde
+              entier grâce à notre plateforme. Montrez les endroits cachés, les
+              délices culinaires et les joyaux culturels qui rendent votre ville
+              unique. Ensemble, inspirons et explorons , pour des expériences
+              locales authentiques et enrichissantes.
+            </p>
+          </div>
+        </div>
+        <div class="description_img">
+          <img src="./images/boat.png" alt="" />
+        </div>
+      </div>
     </section>
     <div class="inscription">
-        <p><span>Inscrivez-vous</span> pour les nouveaux hébergements</p>
-        <div class="incription_form">
-            <input type="text">
-            <button>SOUSCRIRE</button>
-        </div>
+      <p><span>Inscrivez-vous</span> pour les nouveaux hébergements</p>
+      <div class="incription_form">
+        <input type="text" placeholder="Votre Address courriel" />
+        <button>SOUSCRIRE</button>
+      </div>
     </div>
     <footer class="footer_container">
-        <div class="footer_wrapper">
-            <div class="link_wrapper">
-                <p>Dreamin Get Away</p>
-                <div class="link_container">
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                </div>
-            </div>
-            <div class="link_wrapper">
-                <p>Invité / locataire</p>
-                <div class="link_container">
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                </div>
-            </div>
-            <div class="link_wrapper">
-                <p>Hébergeur</p>
-                <div class="link_container">
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                    <li>aaaaaaa</li>
-                </div>
-            </div>
-            <div class="link_wrapper">
-                <p>Nous joindre</p>
-                <div class="link_container">
-                    <div class="phone"></div>
-                    <div class="email"></div>
-                    <div class="adress"></div>
-                </div>
-            </div>
+      <div class="footer_wrapper">
+        <div class="link_wrapper">
+          <p>Dreamin Get Away</p>
+          <div class="link_container">
+            <li>A propos</li>
+            <li>Louer un hébergement</li>
+            <li>Voyages</li>
+            <li>Connexion</li>
+            <li>Inscription</li>
+          </div>
         </div>
-        <div class="social_links">
-
+        <div class="link_wrapper">
+          <p>Invité / locataire</p>
+          <div class="link_container">
+            <li>Aide</li>
+            <li>Régles</li>
+            <li>Termes d'utilisation</li>
+            <li>Confiance & sécurité</li>
+            <li>Paiment</li>
+          </div>
         </div>
+        <div class="link_wrapper">
+          <p>Hébergeur</p>
+          <div class="link_container">
+            <li>Aide</li>
+            <li>Régles</li>
+            <li>Termes d'utilisation</li>
+            <li>Confiance & sécurité</li>
+            <li>Paiment</li>
+          </div>
+        </div>
+        <div class="link_wrapper">
+          <p>Nous joindre</p>
+          <div class="link_container">
+            <div class="icon_wrapper">
+              <i class="fa-solid fa-phone"></i>
+              <span>1 800 555-2834</span>
+            </div>
+            <div class="icon_wrapper">
+              <i class="fa-solid fa-envelope"></i>
+              <span>email@email.com</span>
+            </div>
+            <div class="icon_wrapper">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>2092 Blvd St-joseph,Montréal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social_links">
+        <p class="Partagez_vous">Partages vos Voyages avec Nous</p>
+        <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-google-plus"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
     </footer>
     <script src="index.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
